@@ -46,7 +46,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <img alt="logo" src={logo} />
+        <img className="logo" alt="logo" src={logo} />
         <h1>Top Contributors in Singapore</h1>
         {this.state.contributors.map(contributor => (
           <div className="contributor" key={contributor.userId}>
@@ -54,7 +54,7 @@ class App extends Component {
               {contributor.userDisplayName}
               {this.addProfileLink(contributor)}
             </h2>
-            <p>Number of species sighted: {contributor.numSpecies}</p>
+            <p>Number of species observed: {contributor.numSpecies}</p>
           </div>
         ))}
       </div>

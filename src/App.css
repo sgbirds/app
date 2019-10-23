@@ -2,8 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.logo {
+  margin: 1em;
+  height: 10vmin;
 }
 
 .App-header {
@@ -23,6 +24,6 @@
 
 .contributor {
   margin: 2em;
-  border-radius: 1em;
+  border-radius: 0.5em;
   border: #282c34 2px solid;
 }
