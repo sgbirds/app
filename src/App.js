@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from "react";
 import axios from "axios";
 import "./App.css";
+import logo from "./logo.png";
 
 class App extends Component {
   constructor(prop) {
@@ -45,6 +46,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <img alt="logo" src={logo} />
         <h1>Top Contributors in Singapore</h1>
         {this.state.contributors.map(contributor => (
           <div className="contributor" key={contributor.userId}>
